@@ -1,0 +1,284 @@
+[
+  {
+    "unit_id": "S3-AHU018",
+    "root_cause": "control_override",
+    "confidence": 0.8,
+    "evidence": [
+      "excess 1492 kWh (+132%) over 7 days",
+      "fan speed +38 pts above expected, near max 100% of hours"
+    ],
+    "recommended_action": "Check the BMS for a manual override or a VFD stuck in hand mode; return the fan to auto.",
+    "route_to": "ship_engineering",
+    "excess_kwh": 1491.5,
+    "onset": "2026-09-03",
+    "meta": {
+      "ship_id": "S3"
+    }
+  },
+  {
+    "unit_id": "S3-AHU011",
+    "root_cause": "control_override",
+    "confidence": 0.8,
+    "evidence": [
+      "excess 1353 kWh (+116%) over 7 days",
+      "fan speed +35 pts above expected, near max 100% of hours"
+    ],
+    "recommended_action": "Check the BMS for a manual override or a VFD stuck in hand mode; return the fan to auto.",
+    "route_to": "ship_engineering",
+    "excess_kwh": 1353.2,
+    "onset": "2026-08-30",
+    "meta": {
+      "ship_id": "S3"
+    }
+  },
+  {
+    "unit_id": "S3-AHU040",
+    "root_cause": "control_override",
+    "confidence": 0.8,
+    "evidence": [
+      "excess 1213 kWh (+89%) over 7 days",
+      "fan speed +30 pts above expected, near max 100% of hours"
+    ],
+    "recommended_action": "Check the BMS for a manual override or a VFD stuck in hand mode; return the fan to auto.",
+    "route_to": "ship_engineering",
+    "excess_kwh": 1212.9,
+    "onset": "2026-08-31",
+    "meta": {
+      "ship_id": "S3"
+    }
+  },
+  {
+    "unit_id": "S3-AHU016",
+    "root_cause": "efficiency_degradation",
+    "confidence": 0.8,
+    "evidence": [
+      "excess 351 kWh (+26%) over 7 days",
+      "power +24% above baseline for the same work, trend +1.5%/day"
+    ],
+    "recommended_action": "Inspect and clean the filters and cooling coil; check the belt and damper positions.",
+    "route_to": "ship_engineering",
+    "excess_kwh": 350.8,
+    "onset": "2026-08-26",
+    "meta": {
+      "ship_id": "S3"
+    }
+  },
+  {
+    "unit_id": "S2-AHU032",
+    "root_cause": "operational_change",
+    "confidence": 0.6,
+    "evidence": [
+      "excess 313 kWh (+13%) over 7 days",
+      "fan speed +24 pts at night vs +0 pts by day: looks like the space is now in use overnight"
+    ],
+    "recommended_action": "No fault suspected. The fan follows load, but the space now runs at night. Confirm the new schedule with the hotel team.",
+    "route_to": "no_action",
+    "excess_kwh": 313.2,
+    "onset": "2026-09-05",
+    "meta": {
+      "ship_id": "S2"
+    }
+  },
+  {
+    "unit_id": "S3-AHU017",
+    "root_cause": "sensor_fault",
+    "confidence": 0.9,
+    "evidence": [
+      "power value frozen for 168 h"
+    ],
+    "recommended_action": "Power meter is reporting a frozen value. Raise a ticket to verify the meter and connector.",
+    "route_to": "data_engineering",
+    "excess_kwh": 238.2,
+    "onset": "2026-08-26",
+    "meta": {
+      "ship_id": "S3"
+    }
+  },
+  {
+    "unit_id": "S2-AHU026",
+    "root_cause": "setpoint_change",
+    "confidence": 0.8,
+    "evidence": [
+      "excess 196 kWh (+9%) over 7 days",
+      "supply setpoint shifted -2.9 C"
+    ],
+    "recommended_action": "Confirm whether the supply-air setpoint change was intentional; restore it to baseline if not.",
+    "route_to": "ship_engineering",
+    "excess_kwh": 195.9,
+    "onset": "2026-09-02",
+    "meta": {
+      "ship_id": "S2"
+    }
+  },
+  {
+    "unit_id": "S3-AHU020",
+    "root_cause": "sensor_fault",
+    "confidence": 0.9,
+    "evidence": [
+      "power value frozen for 168 h"
+    ],
+    "recommended_action": "Power meter is reporting a frozen value. Raise a ticket to verify the meter and connector.",
+    "route_to": "data_engineering",
+    "excess_kwh": 190.3,
+    "onset": "2026-08-27",
+    "meta": {
+      "ship_id": "S3"
+    }
+  },
+  {
+    "unit_id": "S1-AHU001",
+    "root_cause": "operational_change",
+    "confidence": 0.6,
+    "evidence": [
+      "excess 154 kWh (+12%) over 7 days",
+      "fan speed +22 pts at night vs -0 pts by day: looks like the space is now in use overnight"
+    ],
+    "recommended_action": "No fault suspected. The fan follows load, but the space now runs at night. Confirm the new schedule with the hotel team.",
+    "route_to": "no_action",
+    "excess_kwh": 153.8,
+    "onset": "2026-08-25",
+    "meta": {
+      "ship_id": "S1"
+    }
+  },
+  {
+    "unit_id": "S1-AHU025",
+    "root_cause": "operational_change",
+    "confidence": 0.6,
+    "evidence": [
+      "excess 148 kWh (+12%) over 7 days",
+      "fan speed +23 pts at night vs +0 pts by day: looks like the space is now in use overnight"
+    ],
+    "recommended_action": "No fault suspected. The fan follows load, but the space now runs at night. Confirm the new schedule with the hotel team.",
+    "route_to": "no_action",
+    "excess_kwh": 148.4,
+    "onset": "2026-08-30",
+    "meta": {
+      "ship_id": "S1"
+    }
+  },
+  {
+    "unit_id": "S1-AHU007",
+    "root_cause": "setpoint_change",
+    "confidence": 0.8,
+    "evidence": [
+      "excess 101 kWh (+12%) over 7 days",
+      "supply setpoint shifted -3.2 C"
+    ],
+    "recommended_action": "Confirm whether the supply-air setpoint change was intentional; restore it to baseline if not.",
+    "route_to": "ship_engineering",
+    "excess_kwh": 101.2,
+    "onset": "2026-08-25",
+    "meta": {
+      "ship_id": "S1"
+    }
+  },
+  {
+    "unit_id": "S1-AHU016",
+    "root_cause": "setpoint_change",
+    "confidence": 0.8,
+    "evidence": [
+      "excess 73 kWh (+8%) over 7 days",
+      "supply setpoint shifted -2.7 C"
+    ],
+    "recommended_action": "Confirm whether the supply-air setpoint change was intentional; restore it to baseline if not.",
+    "route_to": "ship_engineering",
+    "excess_kwh": 72.9,
+    "onset": "2026-08-26",
+    "meta": {
+      "ship_id": "S1"
+    }
+  },
+  {
+    "unit_id": "S3-AHU025",
+    "root_cause": "efficiency_degradation",
+    "confidence": 0.8,
+    "evidence": [
+      "excess 68 kWh (+8%) over 7 days",
+      "power +9% above baseline for the same work, trend +0.6%/day"
+    ],
+    "recommended_action": "Inspect and clean the filters and cooling coil; check the belt and damper positions.",
+    "route_to": "ship_engineering",
+    "excess_kwh": 68.1,
+    "onset": "2026-09-05",
+    "meta": {
+      "ship_id": "S3"
+    }
+  },
+  {
+    "unit_id": "S3-AHU004",
+    "root_cause": "efficiency_degradation",
+    "confidence": 0.8,
+    "evidence": [
+      "excess 47 kWh (+10%) over 7 days",
+      "power +11% above baseline for the same work, trend +0.7%/day"
+    ],
+    "recommended_action": "Inspect and clean the filters and cooling coil; check the belt and damper positions.",
+    "route_to": "ship_engineering",
+    "excess_kwh": 46.5,
+    "onset": "2026-09-04",
+    "meta": {
+      "ship_id": "S3"
+    }
+  },
+  {
+    "unit_id": "S2-AHU022",
+    "root_cause": "data_gap",
+    "confidence": 0.9,
+    "evidence": [
+      "67% of readings missing"
+    ],
+    "recommended_action": "Most readings are missing. Raise a ticket to check the data connector or network link.",
+    "route_to": "data_engineering",
+    "excess_kwh": 4.8,
+    "onset": NaN,
+    "meta": {
+      "ship_id": "S2"
+    }
+  },
+  {
+    "unit_id": "S1-AHU034",
+    "root_cause": "data_gap",
+    "confidence": 0.9,
+    "evidence": [
+      "73% of readings missing"
+    ],
+    "recommended_action": "Most readings are missing. Raise a ticket to check the data connector or network link.",
+    "route_to": "data_engineering",
+    "excess_kwh": 3.5,
+    "onset": NaN,
+    "meta": {
+      "ship_id": "S1"
+    }
+  },
+  {
+    "unit_id": "S1-AHU033",
+    "root_cause": "data_gap",
+    "confidence": 0.9,
+    "evidence": [
+      "69% of readings missing"
+    ],
+    "recommended_action": "Most readings are missing. Raise a ticket to check the data connector or network link.",
+    "route_to": "data_engineering",
+    "excess_kwh": -4.0,
+    "onset": NaN,
+    "meta": {
+      "ship_id": "S1"
+    }
+  },
+  {
+    "unit_id": "S2-AHU019",
+    "root_cause": "sensor_fault",
+    "confidence": 0.9,
+    "evidence": [
+      "power value frozen for 168 h"
+    ],
+    "recommended_action": "Power meter is reporting a frozen value. Raise a ticket to verify the meter and connector.",
+    "route_to": "data_engineering",
+    "excess_kwh": -703.0,
+    "onset": NaN,
+    "meta": {
+      "ship_id": "S2"
+    }
+  }
+]

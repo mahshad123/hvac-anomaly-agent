@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hvac-anomaly-agent"
+version = "0.1.0"
+description = "Tool-using LLM agent that finds, explains and routes HVAC energy anomalies across a fleet"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Mahshad Shariatnasab"}]
+dependencies = ["numpy>=1.24", "pandas>=2.0", "tabulate>=0.9"]
+
+[project.optional-dependencies]
+llm = ["anthropic>=0.40"]
+dev = ["pytest>=7"]
+
+[tool.setuptools]
+packages = ["hvac_agent"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
